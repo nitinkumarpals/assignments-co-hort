@@ -7,6 +7,7 @@
 
 function countVowels(str) {
     // Your code here
+    for(let i=0; i<str.length;)
 }
 
 module.exports = countVowels;
