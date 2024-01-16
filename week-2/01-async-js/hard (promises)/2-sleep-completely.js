@@ -5,6 +5,21 @@
  */
 
 function sleep(milliseconds) {
+    return new Promise(resolve => {
+        const startTime = Date.now();
+        
+        function checkTime() {
+          if (Date.now() < startTime + milliseconds) {
+            // Continue waiting
+            setTimeout(checkTime, 0);
+          } else {
+            // Time has passed, resolve the Promise
+            resolve();
+          }
+        }
+    
+        checkTime(); // Start the loop
+      });
 }
 
 module.exports = sleep;

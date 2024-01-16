@@ -5,7 +5,7 @@
  */
 
 function wait1(t) {
-
+    
 }
 
 function wait2(t) {
