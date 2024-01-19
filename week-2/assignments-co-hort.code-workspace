@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../http-server-1"
+		}
+	],
+	"settings": {}
+}
